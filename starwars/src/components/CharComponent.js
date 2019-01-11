@@ -15,8 +15,6 @@ function CharComponent(props) {
 
                     <p>Skin Color: {char.skin_color}</p>
                     <p>Birth year: {char.birth_year}</p>
-                    <p>Created: {char.created}</p>
-                    <p>Edited: {char.edited}</p>
 
                     <p>Eye Color: {char.eye_color}</p>
                     <p>Films: {char.films.map(film => {return (
@@ -30,7 +28,9 @@ function CharComponent(props) {
                     <p>Starships: {char.starships.map(ship => {return (
                         <li>{ship}</li>
                     )})}</p>
-                    <p>Vehicles: {char.vehicles}</p>
+                    <p>Vehicles: {char.vehicles.map(v => {return (
+                        <li>{v}</li>
+                    )})}</p>
                 </div>
             );
         }))
