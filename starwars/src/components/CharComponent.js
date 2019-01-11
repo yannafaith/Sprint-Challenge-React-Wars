@@ -8,7 +8,7 @@ function CharComponent(props) {
         props.data.map(char => {
             return (
                 <div className='char' id={char.name} >
-                    <p>Name: {char.name}</p>
+                    <h3>Name: {char.name}</h3>
                     <p>Height: {char.height}</p>
                     <p>Mass: {char.mass}</p>
                     <p>Hair Color: {char.hair_color}</p>
